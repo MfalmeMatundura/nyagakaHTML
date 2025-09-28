@@ -1,0 +1,28 @@
+HTTrack3.49-2 launched on Wed, 04 Dec 2024 12:55:47 at localhost:8000
+(httrack localhost:8000 )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+12:55:51	Warning: 	file not stored in cache due to bogus state (incomplete type with OK (200), size 0): localhost:8000/static/css/nyagaks.css
+12:56:13	Warning: 	file not stored in cache due to bogus state (incomplete type with OK (200), size 1209): localhost:8000/static/assets/img/icon/video_btn.png
+12:56:39	Warning: 	file not stored in cache due to bogus state (incomplete type with OK (200), size 0): localhost:8000/static/js/nyagaks.js
+12:57:35	Error: 	"Not Found" (404) at link localhost:8000/site.webmanifest (from localhost:8000/)
+12:57:35	Error: 	"Not Found" (404) at link localhost:8000/{% static 'assets/img/logo.ico (from localhost:8000/)
+12:59:23	Error: 	"Not Found" (404) at link localhost:8000/static/assets/css/owl.video.play.png (from localhost:8000/static/assets/css/owl.carousel.min.css)
+12:59:23	Error: 	"Not Found" (404) at link localhost:8000/static/assets/css/fonts/Flaticon.eot (from localhost:8000/static/assets/css/flaticon.css)
+12:59:23	Error: 	"Not Found" (404) at link localhost:8000/static/assets/img/slider/slider-img-1.jpg (from localhost:8000/static/assets/css/style.css)
+12:59:23	Error: 	"Not Found" (404) at link localhost:8000/static/assets/img/background-img/bg-img-2.jpg (from localhost:8000/static/assets/css/style.css)
+12:59:23	Error: 	"Not Found" (404) at link localhost:8000/static/assets/img/background-img/bg-img-3.jpg (from localhost:8000/static/assets/css/style.css)
+12:59:23	Error: 	"Not Found" (404) at link localhost:8000/static/assets/img/banner/bradcam.png (from localhost:8000/static/assets/css/style.css)
+12:59:23	Error: 	"Not Found" (404) at link localhost:8000/static/assets/img/banner/bradcam2.png (from localhost:8000/static/assets/css/style.css)
+12:59:23	Error: 	"Not Found" (404) at link localhost:8000/static/assets/img/banner/bradcam3.png (from localhost:8000/static/assets/css/style.css)
+12:59:23	Error: 	"Not Found" (404) at link localhost:8000/about-page/site.webmanifest (from localhost:8000/about-page/)
+12:59:23	Error: 	"Not Found" (404) at link localhost:8000/about-page/{% static 'assets/img/logo.ico (from localhost:8000/about-page/)
+12:59:23	Error: 	"Not Found" (404) at link localhost:8000/services/site.webmanifest (from localhost:8000/services/)
+12:59:23	Error: 	"Not Found" (404) at link localhost:8000/services/{% static 'assets/img/logo.ico (from localhost:8000/services/)
+
+HTTrack Website Copier/3.49-2 mirror complete in 4 minutes 6 seconds : 103 links scanned, 88 files written (4993272 bytes overall) [5055877 bytes received at 20552 bytes/sec]
+(14 errors, 3 warnings, 0 messages)

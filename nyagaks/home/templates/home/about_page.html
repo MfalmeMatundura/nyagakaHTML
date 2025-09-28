@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load wagtailcore_tags wagtailimages_tags %}
+{% load static %}
+
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block extra_css %}
+
+
+{% endblock extra_css %}
+
+{% block content %}
+{% include 'home/header.html' %}
+
+<main>
+
+    <!-- slider Area Start-->
+    <div class="slider-area ">
+        <!-- Mobile Menu -->
+        <div class="single-slider slider-height2 d-flex align-items-center"
+            data-background="{% static 'assets/img/hero/h1_hero.jpg' %}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="hero-cap text-center">
+                            <h2>About</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider Area End-->
+
+    {% include 'home/sections/about-sections.html' %}
+    <!-- About Law End-->
+
+    <!-- Contact form End -->
+
+
+    <!-- Team Mates Start -->
+    <div id="team" class="teams-area section-padding30">
+        <div class="container">
+            <div class="row ">
+                <div class="col-xl-12">
+                    <div class="section-tittle section-tittle-f text-center mb-70">
+                        <h2>{{page.team_title}}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                {% for events in page.portfolio_images.all %}
+                <!-- event -->
+                <div class="col-xl-4 col-lg-4 col-md-4">
+                    <div class="single-teams text-center">
+                        <div class="team-img">
+                            {% image events.image width-370 style="height:320px;" %}
+                        </div>
+                        <div class="team-caption">
+                            <h4><a href="#">{{events.lawyer_title}}</a></h4>
+                            <span>{{events.lawyer_description}}</span>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <!-- Team Mates End-->
+    {% include 'home/sections/contact-section.html' %}
+
+
+</main>
+{% include 'home/footer.html' %}
+{% endblock %}
